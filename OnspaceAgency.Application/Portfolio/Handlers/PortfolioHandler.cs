@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnspaceAgency.Application.Generic.Dto
+namespace OnspaceAgency.Application.Portfolio.Handlers
 {
-    public class BaseDto
+    internal class PortfolioHandler
     {
-        public int? Id { get; set; }
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace OnspaceAgency.Domain.Entities
 {
-    internal class Company
+    public class Company : BaseEntity
     {
+        public string name { get; set; }
+        public string description { get; set; }
     }
 }

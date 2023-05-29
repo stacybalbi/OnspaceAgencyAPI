@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnspaceAgency.Application.Generic.Dto
+namespace OnspaceAgency.Application.Files.Mappings
 {
-    public class BaseDto
+    internal class FilesProfile
     {
-        public int? Id { get; set; }
     }
 }

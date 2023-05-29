@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnspaceAgency.Application.Generic.Dto
+namespace OnspaceAgency.Application.Files.Dto
 {
-    public class BaseDto
+    internal class FilesDto
     {
-        public int? Id { get; set; }
     }
 }

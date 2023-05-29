@@ -1,12 +1,12 @@
-﻿using GradingSystem.Application.Generic.Dto;
-using GradingSystem.Domain.Entities;
+﻿using OnspaceAgency.Application.Generic.Dto;
+using OnspaceAgency.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GradingSystem.Application.Generic.Interfaces
+namespace OnspaceAgency.Application.Generic.Interfaces
 {
     public interface IBaseCrudHandler<TDto, TEntity> where TDto : BaseDto where TEntity : BaseEntity
     {
