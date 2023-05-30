@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using GradingSystem.Domain.Entities;
+using OnspaceAgency.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GradingSystem.Infrastructure.Context.Extensions
+namespace OnspaceAgency.Infrastructure.Context.Extensions
 {
     public static class EntityFrameworkExtensions
     {

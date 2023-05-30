@@ -1,23 +1,23 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using GradingSystem.Application.Generic.Interfaces;
-using GradingSystem.Domain.Entities;
-using GradingSystem.Infrastructure.Context;
+using OnspaceAgency.Application.Generic.Interfaces;
+using OnspaceAgency.Domain.Entities;
+using OnspaceAgency.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GradingSystem.Infrastructure.Services
+namespace OnspaceAgency.Infrastructure.Services
 {
     public class BaseCrudService<TEntity> : IBaseCrudService<TEntity> where TEntity : BaseEntity
     {
         protected DbSet<TEntity> _dbSet;
-        private readonly IGradingSystemDbContext _dbContext;
+        private readonly IOnspaceAgencyDbContext _dbContext;
         private readonly IMapper _mapper;
 
-        public BaseCrudService(IGradingSystemDbContext dbContext, IMapper mapper)
+        public BaseCrudService(IOnspaceAgencyDbContext dbContext, IMapper mapper)
         {
             _dbSet = dbContext.GetDbSet<TEntity>();
             _dbContext = dbContext;
