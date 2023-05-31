@@ -14,5 +14,6 @@ namespace OnspaceAgency.Application.Portfolio.Dto
         public int companyId { get; set; }
         public string name { get; set; }
         public string cover_page { get; set; }
+
     }
 }

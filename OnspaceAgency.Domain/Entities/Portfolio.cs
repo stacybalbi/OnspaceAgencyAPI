@@ -15,6 +15,9 @@ namespace OnspaceAgency.Domain.Entities
         public string name { get; set; }
         public string cover_page { get; set; }
 
+        public string description { get; set; }
+
+
         [ForeignKey("filesId")]
 
         public virtual Files Files { get; set; }

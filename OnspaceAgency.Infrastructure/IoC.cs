@@ -24,7 +24,7 @@ namespace OnspaceAgency.Infrastructure
 
 
             services.AddDbContext<OnspaceAgencyDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("OnspaceAgencydb")));
+                options.UseMySQL(configuration.GetConnectionString("OnspaceAgencydb")));
 
             return services;
 
