@@ -63,6 +63,9 @@ namespace OnspaceAgency.Infrastructure.Migrations
                     companyId = table.Column<int>(type: "int", nullable: false),
                     name = table.Column<string>(type: "longtext", nullable: false),
                     cover_page = table.Column<string>(type: "longtext", nullable: false),
+                    description = table.Column<string>(type: "longtext", nullable: false),
+                    _company = table.Column<string>(type: "longtext", nullable: false),
+                    _files = table.Column<string>(type: "longtext", nullable: false),
                     Deleted = table.Column<bool>(type: "tinyint(1)", nullable: false)
                 },
                 constraints: table =>

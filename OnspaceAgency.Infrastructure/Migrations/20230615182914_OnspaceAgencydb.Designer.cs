@@ -10,7 +10,7 @@ using OnspaceAgency.Infrastructure.Context;
 namespace OnspaceAgency.Infrastructure.Migrations
 {
     [DbContext(typeof(OnspaceAgencyDbContext))]
-    [Migration("20230530182115_OnspaceAgencydb")]
+    [Migration("20230615182914_OnspaceAgencydb")]
     partial class OnspaceAgencydb
     {
         /// <inheritdoc />
@@ -79,10 +79,22 @@ namespace OnspaceAgency.Infrastructure.Migrations
                     b.Property<bool>("Deleted")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<string>("_company")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_files")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<int>("companyId")
                         .HasColumnType("int");
 
                     b.Property<string>("cover_page")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("description")
                         .IsRequired()
                         .HasColumnType("longtext");
 

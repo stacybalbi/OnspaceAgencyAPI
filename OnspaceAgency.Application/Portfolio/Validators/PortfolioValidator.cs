@@ -17,6 +17,8 @@ namespace OnspaceAgency.Application.Portfolio.Validators
             RuleFor(x => x.name).NotEmpty().WithMessage("name is required");
             RuleFor(x => x.cover_page).NotEmpty().WithMessage("cover_page is required");
             RuleFor(x => x.description).NotEmpty().WithMessage("Description is required");
+            RuleFor(x => x._company).NotEmpty().WithMessage("cover_page is required");
+            RuleFor(x => x._files).NotEmpty().WithMessage("Description is required");
         }
     }
 }

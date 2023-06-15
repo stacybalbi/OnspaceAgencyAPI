@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OnspaceAgency.Application.Company.Dto;
 using OnspaceAgency.Application.Portfolio.Dto;
 using OnspaceAgency.Application.Portfolio.Handlers;
 
@@ -9,6 +10,7 @@ namespace OnspaceAgencyAPI.Controllers
     public class PortfolioController : ControllerBase
     {
         private readonly IPortfolioHandler _PortfolioHandler;
+        private CompanyDto id;
         public PortfolioController(IPortfolioHandler PortfolioHandler)
         {
             _PortfolioHandler = PortfolioHandler;

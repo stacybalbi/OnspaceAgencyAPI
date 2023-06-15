@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿ using Microsoft.EntityFrameworkCore;
 using OnspaceAgency.Domain.Entities;
 using OnspaceAgency.Infrastructure.Context.Extensions;
 using System;
@@ -41,6 +41,7 @@ namespace OnspaceAgency.Infrastructure.Context
                     modelBuilder.SetSoftDeleteFilter(type.ClrType);
                 }
             }
+
         }
 
         public void SetAuditEntities()

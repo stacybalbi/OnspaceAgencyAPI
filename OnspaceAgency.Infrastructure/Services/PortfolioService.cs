@@ -7,20 +7,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OnspaceAgency.Application.Company.Dto;
+using System.Linq.Expressions;
+using OnspaceAgency.Application.Files.Dto;
+using Microsoft.EntityFrameworkCore;
 
 namespace OnspaceAgency.Infrastructure.Services
 {
     public class PortfolioService : BaseCrudService<Domain.Entities.Portfolio>, IPortfolioService
     {
         private readonly IMapper _mapper;
-        public IOnspaceAgencyDbContext _dbContext;
-        public PortfolioService(IOnspaceAgencyDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
+        public OnspaceAgencyDbContext _dbContext;
+        public ModelBuilder modelBuilder;
+
+        public PortfolioService(OnspaceAgencyDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
             _mapper = mapper;
             _dbContext = dbContext;
         }
 
-
+    
         public Task Push(int studentId)
         {
             _dbContext.SaveChanges();

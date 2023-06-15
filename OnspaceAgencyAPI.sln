@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnspaceAgencyAPI", "OnspaceAgencyAPI\OnspaceAgencyAPI.csproj", "{1B27400C-8726-4FC1-B237-D2BFDA60E02C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnspaceAgencyAPI", "OnspaceAgencyAPI\OnspaceAgencyAPI.csproj", "{1B27400C-8726-4FC1-B237-D2BFDA60E02C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnspaceAgency.Application", "OnspaceAgency.Application\OnspaceAgency.Application.csproj", "{384E515B-ED3D-447C-AE0C-81ED6048E0F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnspaceAgency.Application", "OnspaceAgency.Application\OnspaceAgency.Application.csproj", "{384E515B-ED3D-447C-AE0C-81ED6048E0F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnspaceAgency.Domain", "OnspaceAgency.Domain\OnspaceAgency.Domain.csproj", "{01EF9E3C-7ADA-4FB2-ABBC-2CC15F6268DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnspaceAgency.Domain", "OnspaceAgency.Domain\OnspaceAgency.Domain.csproj", "{01EF9E3C-7ADA-4FB2-ABBC-2CC15F6268DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnspaceAgency.Infrastructure", "OnspaceAgency.Infrastructure\OnspaceAgency.Infrastructure.csproj", "{0EF8539B-37F6-427C-A0ED-31F87CFA1D60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnspaceAgency.Infrastructure", "OnspaceAgency.Infrastructure\OnspaceAgency.Infrastructure.csproj", "{0EF8539B-37F6-427C-A0ED-31F87CFA1D60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

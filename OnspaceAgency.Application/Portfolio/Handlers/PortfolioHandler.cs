@@ -8,6 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OnspaceAgency.Application.Company.Dto;
+using System.Linq.Expressions;
+using OnspaceAgency.Application.Files.Dto;
 
 namespace OnspaceAgency.Application.Portfolio.Handlers
 {
@@ -17,7 +20,8 @@ namespace OnspaceAgency.Application.Portfolio.Handlers
         new Task<PortfolioDto> Update(PortfolioDto dto);
         new Task<PortfolioDto> Update(int id, PortfolioDto dto);
         new Task<PortfolioDto> Create(PortfolioDto dto);
-        new Task<List<PortfolioDto>> Get(int top);
+        new Task<List<PortfolioDto>> Get(int id);
+        
     }
     public class PortfolioHandler : BaseCrudHandler<PortfolioDto, Domain.Entities.Portfolio>, IPortfolioHandler
     {
@@ -59,8 +63,13 @@ namespace OnspaceAgency.Application.Portfolio.Handlers
 
         public async Task<List<PortfolioDto>> Get(int top)
         {
+
             return await base.Get(top);
+            //return await _crudService.ExecuteAsync(id);
+
+
         }
+
 
     }
 }

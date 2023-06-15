@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,6 +18,8 @@ namespace OnspaceAgency.Domain.Entities
 
         public string description { get; set; }
 
+        public string _company { get; set; }
+        public string _files { get; set; }
 
         [ForeignKey("filesId")]
 
@@ -24,7 +27,9 @@ namespace OnspaceAgency.Domain.Entities
 
         [ForeignKey("companyId")]
 
-        public virtual Company Company { get;set; }
-
+        public virtual Company Company { get; set; }
     }
+
+
+       
 }
